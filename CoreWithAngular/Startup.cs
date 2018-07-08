@@ -37,7 +37,7 @@ namespace CoreWithAngular
                 !Path.HasExtension(context.Request.Path.Value) &&
                 !context.Request.Path.Value.StartsWith("/api"))
                 {
-                    context.Request.Path = "/index.html";
+                    context.Response.Redirect("./index.html") ;
                 }
 
 
